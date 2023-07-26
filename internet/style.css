@@ -1,0 +1,152 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "destaque";
+    src: url(fonts/AASELA__.TTF);
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --cor1:#0000ff;
+    --cor2:#175fe6;
+    --cor3:#9c70ee;
+    --cor4:#ffffff;
+    --font_destaque: "destaque";
+    --font_titulo: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font_padrao: Arial, Helvetica, sans-serif; 
+    
+}
+
+body{
+    background-color: #d3d3d3;
+    background-image: url(imagens/wallpaper001.jpg);
+    
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+header{
+    max-height: 40px;
+    background-image:linear-gradient(to bottom, var(--cor2), var(--cor4));
+    padding: 50px;
+}
+
+header h1{
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    font-size: 2.5em;
+    font-family: var(--font_destaque);
+    color: var(--cor4);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.534);
+    
+}
+header p{
+    font-size: 1.1em;
+    text-align: center;
+    padding-top: 10px;
+    color: var(--cor4);
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.534);
+}
+nav{
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color:#ffffffef;
+    border-radius: 0px 0px 0px 20px;
+    box-shadow: 2px 5px 5px 0px rgba(0, 0, 0, 0.363);
+}
+nav p{
+    text-align: center;
+    max-width:800px;
+    margin: auto;
+    font-family: var(--font_titulo);
+    font-weight: bold;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.377);
+}
+strong{
+    color: var(--cor2);
+}
+#imagem1{
+    display: block;
+    width: 100%;
+    border-radius: 20px 0px 0px 20px;
+
+}
+#imagem3{
+    width: 100%;
+    border-radius: 20px 0px 0px 20px;
+}
+section a{
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.9em;
+    color: var(--cor4);
+    padding: 7px;
+    border-radius: 30px 0px 0px 30px;
+    position: sticky;
+    top: -1px;
+    background-color: var(--cor2);
+}
+section a:hover{
+    color: var(--cor3);
+}
+main{
+    background-color: white;
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 30px; 
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 4px 8px 10px 2px rgba(0, 0, 0, 0.507);
+}
+main h2{
+    font-family: var(--font_titulo);
+    color: var(--cor1);
+    padding-top: 5px;
+    padding-left: 15px;
+    
+}
+main h3, h4{
+    padding: 3px;
+    font-family: var(--font_titulo);
+    color: var(--cor2);
+    background-image: linear-gradient(to right, var(--cor3), var(--cor4));
+    border-radius: 10px 0px 0px 10px;
+}
+main p{
+    padding: 7px 0px;
+    line-height: 1.8em;
+    text-indent: 15px;
+    text-align: justify;
+}
+ul{
+    list-style-position: inside;
+    padding: 7px 0px;
+    line-height: 1.8em;
+    text-indent: 15px;
+    text-align: justify;
+}
+aside{
+    background-image: url(imagens/pexels-600.jpg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+    padding: 5px;
+    border-radius: 20px 0px 0px 20px;  
+}
+aside p{
+    text-shadow: 0px 0px 5px hsla(0, 0%, 9%, 0.205);
+}
+
+footer{
+    background-image: linear-gradient(to top, var(--cor2), var(--cor4));
+    text-align: center;
+    padding: 5px;
+}
+footer a{
+    text-decoration: none;
+}
+footer a::after{
+    content:" \1F517";
+}
